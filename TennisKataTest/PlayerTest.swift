@@ -10,12 +10,6 @@ import XCTest
 import SwiftCheck
 @testable import TennisKata
 
-extension Player : Arbitrary {
-    public static var arbitrary : Gen<Player> {
-        return Gen<Player>.fromElementsOf([Player.one, Player.two])
-    }
-}
-
 class PlayerTest: XCTestCase {
     
     func testOtherPlayer() {
