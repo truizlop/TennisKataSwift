@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11EA2A761DE453A800468127 /* TennisKataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A751DE453A800468127 /* TennisKataTest.swift */; };
 		11EA2A7D1DE453DA00468127 /* Tennis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A7C1DE453DA00468127 /* Tennis.swift */; };
 		11EA2A7F1DE454FD00468127 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A7E1DE454FD00468127 /* main.swift */; };
 		11EA2A811DE4782B00468127 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A801DE4782B00468127 /* Player.swift */; };
@@ -15,6 +14,12 @@
 		11EA2A851DE4785600468127 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A841DE4785600468127 /* Point.swift */; };
 		11EA2A871DE4787800468127 /* FortyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A861DE4787800468127 /* FortyData.swift */; };
 		11EA2A891DE478A800468127 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A881DE478A800468127 /* Score.swift */; };
+		11EA2A8D1DE4846900468127 /* PlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A8C1DE4846900468127 /* PlayerTest.swift */; };
+		11EA2AD61DE4C0E900468127 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A801DE4782B00468127 /* Player.swift */; };
+		11EA2AD71DE4C0E900468127 /* PointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A821DE4783F00468127 /* PointData.swift */; };
+		11EA2AD81DE4C0E900468127 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A841DE4785600468127 /* Point.swift */; };
+		11EA2AD91DE4C0E900468127 /* FortyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A861DE4787800468127 /* FortyData.swift */; };
+		11EA2ADA1DE4C0E900468127 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A881DE478A800468127 /* Score.swift */; };
 		33766F372F8868D17123D744 /* Pods_TennisKataTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A0895D53F071C696134FC5 /* Pods_TennisKataTest.framework */; };
 		D4308CA457C251F6A222A8C8 /* Pods_TennisKata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1084DF6B620C1FA305658FAB /* Pods_TennisKata.framework */; };
 /* End PBXBuildFile section */
@@ -35,7 +40,6 @@
 		1084DF6B620C1FA305658FAB /* Pods_TennisKata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TennisKata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EA2A651DE4537A00468127 /* TennisKata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TennisKata; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EA2A731DE453A800468127 /* TennisKataTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisKataTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11EA2A751DE453A800468127 /* TennisKataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisKataTest.swift; sourceTree = "<group>"; };
 		11EA2A771DE453A800468127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11EA2A7B1DE453DA00468127 /* TennisKata-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TennisKata-Bridging-Header.h"; sourceTree = "<group>"; };
 		11EA2A7C1DE453DA00468127 /* Tennis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tennis.swift; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 		11EA2A841DE4785600468127 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		11EA2A861DE4787800468127 /* FortyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FortyData.swift; sourceTree = "<group>"; };
 		11EA2A881DE478A800468127 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		11EA2A8C1DE4846900468127 /* PlayerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTest.swift; sourceTree = "<group>"; };
 		2D4A17D534873F8213FE02F7 /* Pods-TennisKata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisKata.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TennisKata/Pods-TennisKata.debug.xcconfig"; sourceTree = "<group>"; };
 		4F95E456C71B5AF7A474DD7F /* Pods-TennisKataTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisKataTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TennisKataTest/Pods-TennisKataTest.release.xcconfig"; sourceTree = "<group>"; };
 		AB8CBBBD381FC029725E0CA1 /* Pods-TennisKata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisKata.release.xcconfig"; path = "Pods/Target Support Files/Pods-TennisKata/Pods-TennisKata.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +111,7 @@
 		11EA2A741DE453A800468127 /* TennisKataTest */ = {
 			isa = PBXGroup;
 			children = (
-				11EA2A751DE453A800468127 /* TennisKataTest.swift */,
+				11EA2A8B1DE4845800468127 /* Types */,
 				11EA2A771DE453A800468127 /* Info.plist */,
 			);
 			path = TennisKataTest;
@@ -120,6 +125,14 @@
 				11EA2A841DE4785600468127 /* Point.swift */,
 				11EA2A861DE4787800468127 /* FortyData.swift */,
 				11EA2A881DE478A800468127 /* Score.swift */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		11EA2A8B1DE4845800468127 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				11EA2A8C1DE4846900468127 /* PlayerTest.swift */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -334,7 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11EA2A761DE453A800468127 /* TennisKataTest.swift in Sources */,
+				11EA2ADA1DE4C0E900468127 /* Score.swift in Sources */,
+				11EA2A8D1DE4846900468127 /* PlayerTest.swift in Sources */,
+				11EA2AD81DE4C0E900468127 /* Point.swift in Sources */,
+				11EA2AD61DE4C0E900468127 /* Player.swift in Sources */,
+				11EA2AD71DE4C0E900468127 /* PointData.swift in Sources */,
+				11EA2AD91DE4C0E900468127 /* FortyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +377,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -407,6 +426,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -426,6 +446,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -435,6 +456,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				ENABLE_TESTABILITY = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TennisKata/TennisKata-Bridging-Header.h";
@@ -449,6 +471,8 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TennisKata/TennisKata-Bridging-Header.h";
@@ -460,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EEF67AACCE454C708CA84442 /* Pods-TennisKataTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
 				INFOPLIST_FILE = TennisKataTest/Info.plist;
@@ -475,8 +500,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F95E456C71B5AF7A474DD7F /* Pods-TennisKataTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = TennisKataTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.truizlop.TennisKataTest;
