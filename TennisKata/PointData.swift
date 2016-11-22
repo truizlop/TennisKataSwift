@@ -32,3 +32,10 @@ extension PointData : CustomStringConvertible {
         return "\(playerOnePoint) - \(playerTwoPoint)"
     }
 }
+
+extension PointData : Equatable {}
+
+func ==(lhs : PointData, rhs : PointData) -> Bool {
+    return lhs.playerOnePoint == rhs.playerOnePoint &&
+            lhs.playerTwoPoint == rhs.playerTwoPoint
+}

@@ -27,3 +27,16 @@ extension Score : CustomStringConvertible {
         }
     }
 }
+
+extension Score : Equatable {}
+
+func ==(lhs : Score, rhs : Score) -> Bool {
+    switch((lhs, rhs)) {
+    case let (.points(leftPoints), .points(rightPoints)) : return leftPoints == rightPoints
+    case let (.forty(leftData), .forty(rightData)) : return leftData == rightData
+    case (.deuce, .deuce) : return true
+    case let (.advantage(leftPlayer), .advantage(rightPlayer)) : return leftPlayer == rightPlayer
+    case let (.game(leftPlayer), .game(rightPlayer)) : return leftPlayer == rightPlayer
+    default : return false
+    }
+}

@@ -21,3 +21,10 @@ extension FortyData : CustomStringConvertible {
         }
     }
 }
+
+extension FortyData : Equatable {}
+
+func ==(lhs : FortyData, rhs : FortyData) -> Bool {
+    return lhs.player == rhs.player &&
+            lhs.otherPlayerPoint == rhs.otherPlayerPoint
+}
