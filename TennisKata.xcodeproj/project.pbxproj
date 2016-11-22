@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11EA2A691DE4537A00468127 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A681DE4537A00468127 /* main.swift */; };
+		11EA2A761DE453A800468127 /* TennisKataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A751DE453A800468127 /* TennisKataTest.swift */; };
+		11EA2A7D1DE453DA00468127 /* Tennis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A7C1DE453DA00468127 /* Tennis.swift */; };
+		11EA2A7F1DE454FD00468127 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A7E1DE454FD00468127 /* main.swift */; };
+		11EA2A811DE4782B00468127 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A801DE4782B00468127 /* Player.swift */; };
+		11EA2A831DE4783F00468127 /* PointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A821DE4783F00468127 /* PointData.swift */; };
+		11EA2A851DE4785600468127 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A841DE4785600468127 /* Point.swift */; };
+		11EA2A871DE4787800468127 /* FortyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A861DE4787800468127 /* FortyData.swift */; };
+		11EA2A891DE478A800468127 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A881DE478A800468127 /* Score.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +31,28 @@
 
 /* Begin PBXFileReference section */
 		11EA2A651DE4537A00468127 /* TennisKata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TennisKata; sourceTree = BUILT_PRODUCTS_DIR; };
-		11EA2A681DE4537A00468127 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		11EA2A731DE453A800468127 /* TennisKataTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisKataTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11EA2A751DE453A800468127 /* TennisKataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisKataTest.swift; sourceTree = "<group>"; };
+		11EA2A771DE453A800468127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11EA2A7B1DE453DA00468127 /* TennisKata-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TennisKata-Bridging-Header.h"; sourceTree = "<group>"; };
+		11EA2A7C1DE453DA00468127 /* Tennis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tennis.swift; sourceTree = "<group>"; };
+		11EA2A7E1DE454FD00468127 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		11EA2A801DE4782B00468127 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		11EA2A821DE4783F00468127 /* PointData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointData.swift; sourceTree = "<group>"; };
+		11EA2A841DE4785600468127 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		11EA2A861DE4787800468127 /* FortyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FortyData.swift; sourceTree = "<group>"; };
+		11EA2A881DE478A800468127 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		11EA2A621DE4537A00468127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11EA2A701DE453A800468127 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				11EA2A671DE4537A00468127 /* TennisKata */,
+				11EA2A741DE453A800468127 /* TennisKataTest */,
 				11EA2A661DE4537A00468127 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				11EA2A651DE4537A00468127 /* TennisKata */,
+				11EA2A731DE453A800468127 /* TennisKataTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +83,33 @@
 		11EA2A671DE4537A00468127 /* TennisKata */ = {
 			isa = PBXGroup;
 			children = (
-				11EA2A681DE4537A00468127 /* main.swift */,
+				11EA2A8A1DE47C4E00468127 /* Types */,
+				11EA2A7C1DE453DA00468127 /* Tennis.swift */,
+				11EA2A7B1DE453DA00468127 /* TennisKata-Bridging-Header.h */,
+				11EA2A7E1DE454FD00468127 /* main.swift */,
 			);
 			path = TennisKata;
+			sourceTree = "<group>";
+		};
+		11EA2A741DE453A800468127 /* TennisKataTest */ = {
+			isa = PBXGroup;
+			children = (
+				11EA2A751DE453A800468127 /* TennisKataTest.swift */,
+				11EA2A771DE453A800468127 /* Info.plist */,
+			);
+			path = TennisKataTest;
+			sourceTree = "<group>";
+		};
+		11EA2A8A1DE47C4E00468127 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				11EA2A801DE4782B00468127 /* Player.swift */,
+				11EA2A821DE4783F00468127 /* PointData.swift */,
+				11EA2A841DE4785600468127 /* Point.swift */,
+				11EA2A861DE4787800468127 /* FortyData.swift */,
+				11EA2A881DE478A800468127 /* Score.swift */,
+			);
+			name = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +132,23 @@
 			productReference = 11EA2A651DE4537A00468127 /* TennisKata */;
 			productType = "com.apple.product-type.tool";
 		};
+		11EA2A721DE453A800468127 /* TennisKataTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11EA2A781DE453A800468127 /* Build configuration list for PBXNativeTarget "TennisKataTest" */;
+			buildPhases = (
+				11EA2A6F1DE453A800468127 /* Sources */,
+				11EA2A701DE453A800468127 /* Frameworks */,
+				11EA2A711DE453A800468127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TennisKataTest;
+			productName = TennisKataTest;
+			productReference = 11EA2A731DE453A800468127 /* TennisKataTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +160,12 @@
 				ORGANIZATIONNAME = "Tomás Ruiz-López";
 				TargetAttributes = {
 					11EA2A641DE4537A00468127 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = L7RXC8SZH2;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					11EA2A721DE453A800468127 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = L7RXC8SZH2;
 						ProvisioningStyle = Automatic;
@@ -112,16 +185,41 @@
 			projectRoot = "";
 			targets = (
 				11EA2A641DE4537A00468127 /* TennisKata */,
+				11EA2A721DE453A800468127 /* TennisKataTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11EA2A711DE453A800468127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11EA2A611DE4537A00468127 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11EA2A691DE4537A00468127 /* main.swift in Sources */,
+				11EA2A891DE478A800468127 /* Score.swift in Sources */,
+				11EA2A7F1DE454FD00468127 /* main.swift in Sources */,
+				11EA2A851DE4785600468127 /* Point.swift in Sources */,
+				11EA2A811DE4782B00468127 /* Player.swift in Sources */,
+				11EA2A831DE4783F00468127 /* PointData.swift in Sources */,
+				11EA2A871DE4787800468127 /* FortyData.swift in Sources */,
+				11EA2A7D1DE453DA00468127 /* Tennis.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11EA2A6F1DE453A800468127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11EA2A761DE453A800468127 /* TennisKataTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +317,12 @@
 		11EA2A6D1DE4537A00468127 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TennisKata/TennisKata-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -228,8 +330,39 @@
 		11EA2A6E1DE4537A00468127 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TennisKata/TennisKata-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		11EA2A791DE453A800468127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				INFOPLIST_FILE = TennisKataTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truizlop.TennisKataTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		11EA2A7A1DE453A800468127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				INFOPLIST_FILE = TennisKataTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truizlop.TennisKataTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -251,6 +384,14 @@
 			buildConfigurations = (
 				11EA2A6D1DE4537A00468127 /* Debug */,
 				11EA2A6E1DE4537A00468127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		11EA2A781DE453A800468127 /* Build configuration list for PBXNativeTarget "TennisKataTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11EA2A791DE453A800468127 /* Debug */,
+				11EA2A7A1DE453A800468127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

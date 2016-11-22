@@ -8,5 +8,4 @@
 
 import Foundation
 
-print("Hello, World!")
-
+print(scoreSequence(wins: Player.one, Player.two, Player.two, Player.one, Player.one, Player.one))
