@@ -15,6 +15,8 @@
 		11EA2A851DE4785600468127 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A841DE4785600468127 /* Point.swift */; };
 		11EA2A871DE4787800468127 /* FortyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A861DE4787800468127 /* FortyData.swift */; };
 		11EA2A891DE478A800468127 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA2A881DE478A800468127 /* Score.swift */; };
+		33766F372F8868D17123D744 /* Pods_TennisKataTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A0895D53F071C696134FC5 /* Pods_TennisKataTest.framework */; };
+		D4308CA457C251F6A222A8C8 /* Pods_TennisKata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1084DF6B620C1FA305658FAB /* Pods_TennisKata.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1084DF6B620C1FA305658FAB /* Pods_TennisKata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TennisKata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EA2A651DE4537A00468127 /* TennisKata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TennisKata; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EA2A731DE453A800468127 /* TennisKataTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisKataTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EA2A751DE453A800468127 /* TennisKataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisKataTest.swift; sourceTree = "<group>"; };
@@ -42,6 +45,11 @@
 		11EA2A841DE4785600468127 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		11EA2A861DE4787800468127 /* FortyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FortyData.swift; sourceTree = "<group>"; };
 		11EA2A881DE478A800468127 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		2D4A17D534873F8213FE02F7 /* Pods-TennisKata.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisKata.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TennisKata/Pods-TennisKata.debug.xcconfig"; sourceTree = "<group>"; };
+		4F95E456C71B5AF7A474DD7F /* Pods-TennisKataTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisKataTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TennisKataTest/Pods-TennisKataTest.release.xcconfig"; sourceTree = "<group>"; };
+		AB8CBBBD381FC029725E0CA1 /* Pods-TennisKata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisKata.release.xcconfig"; path = "Pods/Target Support Files/Pods-TennisKata/Pods-TennisKata.release.xcconfig"; sourceTree = "<group>"; };
+		C8A0895D53F071C696134FC5 /* Pods_TennisKataTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TennisKataTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF67AACCE454C708CA84442 /* Pods-TennisKataTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TennisKataTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TennisKataTest/Pods-TennisKataTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4308CA457C251F6A222A8C8 /* Pods_TennisKata.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33766F372F8868D17123D744 /* Pods_TennisKataTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,8 @@
 				11EA2A671DE4537A00468127 /* TennisKata */,
 				11EA2A741DE453A800468127 /* TennisKataTest */,
 				11EA2A661DE4537A00468127 /* Products */,
+				72592A54D67C32D93B62773B /* Pods */,
+				78B450B06E7BD35951DD6563 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +124,26 @@
 			name = Types;
 			sourceTree = "<group>";
 		};
+		72592A54D67C32D93B62773B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D4A17D534873F8213FE02F7 /* Pods-TennisKata.debug.xcconfig */,
+				AB8CBBBD381FC029725E0CA1 /* Pods-TennisKata.release.xcconfig */,
+				EEF67AACCE454C708CA84442 /* Pods-TennisKataTest.debug.xcconfig */,
+				4F95E456C71B5AF7A474DD7F /* Pods-TennisKataTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78B450B06E7BD35951DD6563 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1084DF6B620C1FA305658FAB /* Pods_TennisKata.framework */,
+				C8A0895D53F071C696134FC5 /* Pods_TennisKataTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11EA2A6C1DE4537A00468127 /* Build configuration list for PBXNativeTarget "TennisKata" */;
 			buildPhases = (
+				363445E444F8F26EDE80624F /* [CP] Check Pods Manifest.lock */,
 				11EA2A611DE4537A00468127 /* Sources */,
 				11EA2A621DE4537A00468127 /* Frameworks */,
 				11EA2A631DE4537A00468127 /* CopyFiles */,
+				B0364D138C150C79CF036080 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11EA2A781DE453A800468127 /* Build configuration list for PBXNativeTarget "TennisKataTest" */;
 			buildPhases = (
+				FCAF825DE9AF0F9F3E1F3314 /* [CP] Check Pods Manifest.lock */,
 				11EA2A6F1DE453A800468127 /* Sources */,
 				11EA2A701DE453A800468127 /* Frameworks */,
 				11EA2A711DE453A800468127 /* Resources */,
+				E856F373A057807DE15786CF /* [CP] Embed Pods Frameworks */,
+				1E51808D4E0D9A26BF99F133 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +236,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E51808D4E0D9A26BF99F133 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TennisKataTest/Pods-TennisKataTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		363445E444F8F26EDE80624F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0364D138C150C79CF036080 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TennisKata/Pods-TennisKata-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E856F373A057807DE15786CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TennisKataTest/Pods-TennisKataTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCAF825DE9AF0F9F3E1F3314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11EA2A611DE4537A00468127 /* Sources */ = {
@@ -316,6 +431,7 @@
 		};
 		11EA2A6D1DE4537A00468127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D4A17D534873F8213FE02F7 /* Pods-TennisKata.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
@@ -329,6 +445,7 @@
 		};
 		11EA2A6E1DE4537A00468127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB8CBBBD381FC029725E0CA1 /* Pods-TennisKata.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
@@ -341,6 +458,7 @@
 		};
 		11EA2A791DE453A800468127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF67AACCE454C708CA84442 /* Pods-TennisKataTest.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
@@ -355,6 +473,7 @@
 		};
 		11EA2A7A1DE453A800468127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F95E456C71B5AF7A474DD7F /* Pods-TennisKataTest.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = L7RXC8SZH2;
@@ -386,6 +505,7 @@
 				11EA2A6E1DE4537A00468127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11EA2A781DE453A800468127 /* Build configuration list for PBXNativeTarget "TennisKataTest" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +514,7 @@
 				11EA2A7A1DE453A800468127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
