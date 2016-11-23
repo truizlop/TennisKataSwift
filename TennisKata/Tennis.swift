@@ -11,6 +11,10 @@ import Foundation
 let newGame = Score.points(PointData(playerOnePoint: .love, playerTwoPoint: .love))
 
 func scoreSequence(wins : Player...) -> Score {
+    return scoreSequence(wins : wins)
+}
+
+func scoreSequence(wins : [Player]) -> Score {
     return wins.reduce(newGame, score)
 }
 
