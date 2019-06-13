@@ -9,7 +9,7 @@ target 'TennisKata' do
 
   target 'TennisKataTest' do
     inherit! :search_paths
-    pod 'SwiftCheck', '~> 0.7'
+    pod 'SwiftCheck', '~> 0.12'
   end
 
 end

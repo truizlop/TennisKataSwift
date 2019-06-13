@@ -12,6 +12,6 @@ import SwiftCheck
 
 extension Point : Arbitrary {
     public static var arbitrary : Gen<Point> {
-        return Gen<Point>.fromElementsOf([Point.love, Point.fifteen, Point.thirty])
+        return Gen<Point>.fromElements(of: [Point.love, Point.fifteen, Point.thirty])
     }
 }

@@ -54,7 +54,7 @@ class TennisTest: XCTestCase {
             return actual == Score.deuce
         }
         
-        let lessThan30Gen = Gen<Point>.fromElementsOf([Point.love, Point.fifteen])
+        let lessThan30Gen = Gen<Point>.fromElements(of: [Point.love, Point.fifteen])
         property("Given a result 40 - < 30, when the latter player scores, its points are incremented") <- forAll {
             (player : Player) in
             return forAll(lessThan30Gen.map{FortyData(player : player, otherPlayerPoint: $0)}){
@@ -92,64 +92,64 @@ class TennisTest: XCTestCase {
 
     func testTennisRules() {
         property("A game with less than 4 balls isn't over") <- forAll(self.generateSequenceOf(lengthSmallerThan: 4)) {
-            (sequence : ArrayOf<Player>) in
-            let actual = scoreSequence(wins: sequence.getArray)
+            (sequence : [Player]) in
+            let actual = scoreSequence(wins: sequence)
             return !self.isGame(actual)
         }
         
         property("A game with less than 6 balls can't be deuce") <- forAll(self.generateSequenceOf(lengthSmallerThan: 6)) {
-            (sequence : ArrayOf<Player>) in
-            let actual = scoreSequence(wins: sequence.getArray)
+            (sequence : [Player]) in
+            let actual = scoreSequence(wins: sequence)
             return !self.isDeuce(actual)
         }
         
         property("A game with less than 7 balls can't have any player with advantage") <- forAll(self.generateSequenceOf(lengthSmallerThan: 7)) {
-            (sequence : ArrayOf<Player>) in
-            let actual = scoreSequence(wins: sequence.getArray)
+            (sequence : [Player]) in
+            let actual = scoreSequence(wins: sequence)
             return !self.isAdvantage(actual)
         }
         
         property("A game with more than 4 balls can't be points") <- forAll(self.generateSequenceOf(lengthGreaterThan: 4)) {
-            (sequence : ArrayOf<Player>) in
-            let actual = scoreSequence(wins: sequence.getArray)
+            (sequence : [Player]) in
+            let actual = scoreSequence(wins: sequence)
             return !self.isPoints(actual)
         }
         
         property("A game with more than 5 balls can't be forty") <- forAll(self.generateSequenceOf(lengthGreaterThan: 5)) {
-            (sequence : ArrayOf<Player>) in
-            let actual = scoreSequence(wins: sequence.getArray)
+            (sequence : [Player]) in
+            let actual = scoreSequence(wins: sequence)
             return !self.isForty(actual)
         }
         
         property("A game where one player wins all balls is over in 4 balls") <- forAll(self.generateSequenceOfSamePlayer(withLength: 4)) {
-            (sequence : ArrayOf<Player>) in
-            let actual = scoreSequence(wins: sequence.getArray)
+            (sequence : [Player]) in
+            let actual = scoreSequence(wins: sequence)
             return self.isGame(actual)
         }
         
         property("A game where players alternate winning balls is never over") <- forAll(self.generateSequenceOfAlternatingPlayers()){
-            (sequence : ArrayOf<Player>) in
-            let actual = scoreSequence(wins: sequence.getArray)
+            (sequence : [Player]) in
+            let actual = scoreSequence(wins: sequence)
             return !self.isGame(actual)
         }
     }
     
-    func generateSequenceOf(lengthSmallerThan n : Int) -> Gen<ArrayOf<Player>> {
-        return ArrayOf<Player>.arbitrary.suchThat{ $0.getArray.count < n }
+    func generateSequenceOf(lengthSmallerThan n : Int) -> Gen<[Player]> {
+        return Array<Player>.arbitrary.suchThat{ $0.count < n }
     }
     
-    func generateSequenceOf(lengthGreaterThan n : Int) -> Gen<ArrayOf<Player>> {
-        return ArrayOf<Player>.arbitrary.suchThat{ $0.getArray.count > n }
+    func generateSequenceOf(lengthGreaterThan n : Int) -> Gen<[Player]> {
+        return Array<Player>.arbitrary.suchThat{ $0.count > n }
     }
     
-    func generateSequenceOfSamePlayer(withLength n : Int) -> Gen<ArrayOf<Player>> {
-        return Player.arbitrary.map{ ArrayOf(Array(repeating: $0, count:n)) }
+    func generateSequenceOfSamePlayer(withLength n : Int) -> Gen<[Player]> {
+        return Player.arbitrary.map{ Array(repeating: $0, count:n) }
     }
     
-    func generateSequenceOfAlternatingPlayers() -> Gen<ArrayOf<Player>> {
+    func generateSequenceOfAlternatingPlayers() -> Gen<[Player]> {
         let positiveGen = Int.arbitrary.suchThat{ $0 > 0 }
         return Gen<(Int, Player)>.zip(positiveGen, Player.arbitrary)
-            .map{ ArrayOf(Array(repeating: $1, count: $0).flatMap{ [$0, $0.other] }) }
+            .map{ Array(repeating: $1, count: $0).flatMap{ [$0, $0.other] } }
     }
     
     func isPoints(_ score : Score) -> Bool {

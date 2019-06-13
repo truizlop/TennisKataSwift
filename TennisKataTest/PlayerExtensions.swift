@@ -11,6 +11,6 @@ import SwiftCheck
 
 extension Player : Arbitrary {
     public static var arbitrary : Gen<Player> {
-        return Gen<Player>.fromElementsOf([Player.one, Player.two])
+        return Gen<Player>.fromElements(of: [Player.one, Player.two])
     }
 }

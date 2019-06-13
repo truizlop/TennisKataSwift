@@ -17,6 +17,6 @@ extension Score : Arbitrary {
         let deuceGen = Gen<Score>.pure(Score.deuce)
         let advantageGen = Player.arbitrary.map{ return Score.advantage($0) }
         let gameGen = Player.arbitrary.map{ return Score.game($0) }
-        return Gen<Score>.oneOf([pointGen, fortyGen, deuceGen, advantageGen, gameGen])
+        return Gen<Score>.one(of: [pointGen, fortyGen, deuceGen, advantageGen, gameGen])
     }
 }
