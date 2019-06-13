@@ -1,38 +1,28 @@
-//
-//  Tennis.swift
-//  TennisKata
-//
-//  Created by Tomás Ruiz López on 22/11/16.
-//  Copyright © 2016 Tomás Ruiz-López. All rights reserved.
-//
-
-import Foundation
-
 let newGame = Score.points(PointData(playerOnePoint: .love, playerTwoPoint: .love))
 
-func scoreSequence(wins : Player...) -> Score {
-    return scoreSequence(wins : wins)
+func scoreSequence(wins: Player...) -> Score {
+    return scoreSequence(wins: wins)
 }
 
-func scoreSequence(wins : [Player]) -> Score {
+func scoreSequence(wins: [Player]) -> Score {
     return wins.reduce(newGame, score)
 }
 
-func score(current : Score, winner : Player) -> Score {
+func score(current: Score, winner: Player) -> Score {
     switch current {
     case let .points(pointData): return scoreWhenPoints(winner: winner, current: pointData)
     case let .forty(fortyData): return scoreWhenForty(winner: winner, current: fortyData)
     case .deuce: return scoreWhenDeuce(winner: winner)
     case let .advantage(player): return scoreWhenAdvantage(advantagedPlayer: player, winner: winner)
-    case .game(_): return scoreWhenGame(winner: winner)
+    case .game: return scoreWhenGame(winner: winner)
     }
 }
 
-func scoreWhenGame(winner : Player) -> Score {
+func scoreWhenGame(winner: Player) -> Score {
     return .game(winner)
 }
 
-func scoreWhenAdvantage(advantagedPlayer : Player, winner : Player) -> Score {
+func scoreWhenAdvantage(advantagedPlayer: Player, winner: Player) -> Score {
     if advantagedPlayer == winner {
         return .game(winner)
     } else {
@@ -40,11 +30,11 @@ func scoreWhenAdvantage(advantagedPlayer : Player, winner : Player) -> Score {
     }
 }
 
-func scoreWhenDeuce(winner : Player) -> Score {
+func scoreWhenDeuce(winner: Player) -> Score {
     return .advantage(winner)
 }
 
-func scoreWhenForty(winner : Player, current : FortyData) -> Score {
+func scoreWhenForty(winner: Player, current: FortyData) -> Score {
     if winner == current.player {
         return .game(winner)
     } else {
@@ -56,11 +46,10 @@ func scoreWhenForty(winner : Player, current : FortyData) -> Score {
     }
 }
 
-func scoreWhenPoints(winner : Player, current : PointData) -> Score {
+func scoreWhenPoints(winner: Player, current: PointData) -> Score {
     if let newPoint = current.point(forPlayer: winner).increment {
         return .points(current.point(newPoint, toPlayer: winner))
     } else {
         return .forty(FortyData(player: winner, otherPlayerPoint: current.point(forPlayer: winner.other)))
     }
 }
-
